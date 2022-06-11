@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: black;
+}
+.cemeri-header{
+    
+    width: 100;
+}
+.header-section{
+    height: 80px;
+    width: 100%;
+    border-bottom: solid 1px rgb(167, 167, 167);
+    display: flex;
+    align-items: center;
+}
+.top{
+    background-color: white;
+    justify-content: space-around;
+}
+.top-link{
+    padding: 1rem;
+}
+.bottom{
+    background-color: white;
+    justify-content: center;
+}
+li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    position: relative;
+}
+.nav-item:hover{
+    font-size: 1.2rem;
+    color: rgb(184, 195, 120);
+    transition: 0.5s;
+}
+.nav-item:hover ~ .sub-list, .sub-list:hover{
+    display: block;
+}
+.sub-list{
+    position: absolute;
+    background-color: white;
+    min-width: 10rem;
+    display: none;
+}
+.sub-list li{
+    display: block;
+    position: relative;
+    border: solid 1px rgb(167, 167, 167);
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+.third-level{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.thrid-level-li:hover > .third-level{
+    display: block;
+}
+a:hover{
+    text-decoration: underline;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    cursor: pointer;
+    display: none;
+}
+#search{
+    display: none;
+}
+@media(max-width: 952px){
+
+}
+@media(max-width: 770px){
+    .checkbtn{
+        display: block;
+    }
+    .top{
+        background-color: #005984;
+        height: 4rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .top .header-items{
+        display: none;
+    }
+    #home-link{
+        color: white;
+        display: block;
+    }
+    #search{
+        display: block;
+    }
+    .bottom{
+        width: 100%;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        height: auto;
+        transition: 0.5s;
+    }
+    .bottom ul{
+        width: 100%;
+        top: 0rem;
+        
+    }
+    .bottom ul li {
+        display: block;
+    }
+}
