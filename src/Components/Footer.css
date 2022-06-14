@@ -1,0 +1,27 @@
+.footer{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: #eeecec;
+}
+.social{
+    padding: 2rem;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    padding: 1rem;
+}
+.icon:hover{
+    background-color: black;
+    border-radius: 50%;
+}
+.icon:hover > path{
+    color: white;
+}
+.derechos p{
+    text-align: center;
+    padding-top: 1.5rem;
+}

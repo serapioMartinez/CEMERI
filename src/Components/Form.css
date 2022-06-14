@@ -1,0 +1,28 @@
+form{
+    text-align: left;
+    position: relative;
+}
+form *{
+    width: 100%;
+    font-size: 22px;
+    border-radius: 5px;
+}
+#save{
+    width: auto;
+    display: block;
+    margin-top: 1rem;
+}
+#submit{
+    width: auto;
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: palevioletred;
+    border: solid 1px palevioletred;
+    border-radius: 5px;
+}
+#submit:hover{
+    background-color: palevioletred;
+    color: white;
+    transition: 0.5s;
+}

@@ -13,7 +13,7 @@ function Parrafo (props){
             whiteSpace: "normal",
         }}>
             {props.lista.map( (elemento) => {
-                return (<li className="elemento-lista-parrafo"><p>{(elemento.contexto?<span style={{
+                return (<li key={Math.random()} className="elemento-lista-parrafo"><p>{(elemento.contexto?<span style={{
                     fontWeight: 'bold'
                 }}>{elemento.contexto}</span>:false)} {elemento.contenido}</p></li>)
             })}

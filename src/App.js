@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Header from './Components/Header';
@@ -39,16 +38,7 @@ function App() {
     <div className="App">
       <Header/>
       <BlogContent/>
-      <ul>
-        <li>asdasd</li>
-        <li>asdasd</li>
-        <li>asdasd</li>
-        <li>asdasd</li>
-        <li>asdasd</li>
-        <li>asdasd</li>
-        <li>asdasd</li>
-        
-      </ul>
+      <Footer />
     </div>
   );
 }

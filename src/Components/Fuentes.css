@@ -1,0 +1,11 @@
+#expand{
+    color: palevioletred;
+    font-weight: 700;
+    font-size: 25px;
+}
+.hidden{
+    display: none;
+}
+#content-ref{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}

@@ -1,10 +1,36 @@
 *{
     font-family: "LibreFranklin";
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 2em;
     letter-spacing: 0.5px;
+}
+h1{
+    font-size: 2.3rem ;
+    font-weight: 900;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+p{
+    text-align: justify;
 }
 @font-face {
     font-family: "LibreFranklin";
     src: url("./Fonts/LibreFranklin.ttf");
+}
+@media(max-width: 770px){
+    *{
+        font-size: 1.1rem;
+        line-height: 1.5em;
+        letter-spacing: 0.2px;
+    }
+    h1{
+        font-size: 2rem ;
+        font-weight: 900;
+    }
+    h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
 }

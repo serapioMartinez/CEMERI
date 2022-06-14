@@ -11,7 +11,7 @@ import Parrafo from "./Parrafo";
         <h2 style={titulo_style}>{props.titulo}</h2>:
         false}
         {props.parrafos.map((parrafo) => {
-            return <Parrafo contenido={parrafo.contenido} lista={parrafo.lista}/>
+            return <Parrafo key={Math.random()} contenido={parrafo.contenido} lista={parrafo.lista}/>
         })}
     </div>
     );

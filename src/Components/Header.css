@@ -8,6 +8,7 @@
 .cemeri-header{
     width: 100;
     overflow: inherit;
+    background-color: white;
 }
 .header-section{
     height: 80px;
@@ -19,6 +20,7 @@
 .top{
     background-color: white;
     justify-content: space-around;
+    z-index: 99;
 }
 .top-link{
     padding: 1rem;
@@ -26,21 +28,29 @@
 .bottom{
     background-color: white;
     justify-content: center;
+    z-index: 99;
 }
-li{
+.bottom a{
+    padding: 1rem;
+}
+.nav-item{
     display: inline-block;
     text-decoration: none;
     margin: 1rem 2rem;
     position: relative;
     white-space: nowrap;
 }
-.nav-item:hover{
-    font-size: 1.2rem;
+.nav-item li:hover{
+    background-color: rgb(230, 229, 229);
+    transition: 0.3s;
+}
+.nav-item:hover > a{
     color: rgb(184, 195, 120);
     transition: 0.5s;
 }
-.nav-item:hover ~ .sub-list, .sub-list:hover{
+.nav-item:hover a ~ .sub-list, .sub-list:hover{
     display: block;
+    transition: 1s;
 }
 .sub-list{
     position: absolute;
@@ -53,9 +63,9 @@ li{
     position: relative;
     border: solid 1px rgb(167, 167, 167);
     margin: auto;
-    padding: 0.5rem;
     text-align: center;
 }
+
 .third-level{
     background-color: white;
     position: absolute;
@@ -90,13 +100,16 @@ a:hover{
     top: 0;
     left: 0;
 }
+.phone-icon > path {
+    color: white;
+}
 @media(max-width: 770px){
     .checkbtn{
         display: block;
     }
     .top{
         background-color: #005984;
-        height: 4rem;
+        height: 3rem;
         position: fixed;
         top: 0;
         width: 100%;
@@ -114,7 +127,8 @@ a:hover{
     .bottom{
         width: 100%;
         position: fixed;
-        top: 4rem;
+        overflow-y: scroll;
+        top: 3rem;
         left: 0;
         height: auto;
         transition: 0.5s;
@@ -123,11 +137,45 @@ a:hover{
         left: -100%;
     }
     .bottom ul{
-        width: 100%;
-        top: 0rem;
-        
+        width: 100%;        
     }
     .bottom ul li {
         display: block;
+    }
+    .nav-item{
+        width: 100%;
+        margin: 0px;
+    }
+    .nav-item a{
+        width: 100%;
+        padding: 1rem;
+    }
+    .nav-item:hover{
+        background-color: rgb(59, 59, 59);
+    }
+    .sub-list{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        
+    }
+    .sub-list li{
+        border: 0px;
+        text-align: left;
+    }
+    .sub-list li a{
+        margin-left: 1rem;
+    }
+    .third-level{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .third-level li a{
+        margin-left: 1.5rem;
+    }
+    .nav-item:hover > a{
+        color: white;
+        transition: 0.5s;
     }
 }

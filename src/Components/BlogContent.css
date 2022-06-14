@@ -4,11 +4,8 @@
     box-sizing: border-box;
 }
 .blog-content{
-    position: absolute;
-    z-index: -1;
-    top: 120px;
+    top: 80px;
     left: 0;
-    padding: 2rem;
     margin: auto;
     margin-top: 4rem ;
     width: 100%;
@@ -16,11 +13,11 @@
 }
 .titulo{
     text-align: center;
-    font-size: 40px ;
     padding: 1rem;
 }
 .presentacion{
     width: 90%;
+    margin: auto;
 }
 .image-container img{
     width: 100%;
@@ -32,8 +29,59 @@
 }
 .presentacion-footer div{
     width: 50%;
+    text-align: left;
 }
 .net{
     font-size: 30px;
     padding: 5px;
+}
+.halfy{
+    width: 40rem;
+    margin: auto;
+}
+#secciones{
+    padding-top: 2rem;
+}
+#fuentes{
+    text-align: left;
+}
+#info-frame{
+    margin-top: 2rem;
+    background-color: rgb(235, 233, 229);
+}
+#info-frame p{
+    padding: 0.5rem;
+    font-size: 22px;
+    text-align: center;
+}
+#news{
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+}
+@media(max-width: 900px){
+    .halfy{
+        width: 30rem;
+    }
+}
+@media(max-width: 770px){
+    .blog-content{
+        margin-top: 2rem;
+    }
+    .presentacion{
+        width: 100%;
+    }
+    .presentacion-footer{
+        display: block;
+    }
+    .presentacion-footer div{
+        display: block;
+        width: 100%;
+        padding: 0;
+        padding-left: 1rem;
+    }
+    .halfy{
+        width: 90%;
+    }
 }
