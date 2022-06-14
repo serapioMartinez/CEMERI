@@ -1,19 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons'
 import { faMagnifyingGlass, faBars } from '@fortawesome/free-solid-svg-icons'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
  import './Header.css'
 function Header() {
   return (
     <div className='cemeri-header'>
         <div className='header-section top'>
-            <div>
                 <input type='checkbox' id='check'/>
                 <label htmlFor='check' className='checkbtn'>
                     <FontAwesomeIcon icon={faBars}  size="2x"/>
                 </label>
-            </div>
             <div className='header-items'>
                 <a className='top-link' href="#" style={{
                     color: "red"
@@ -55,8 +53,8 @@ function Header() {
                         <ul className='sub-list'>
                             <a href="#"><li>Mapas</li></a>
                             <a href="#"><li>Enciclopedia</li></a>
-                            <a href="#"><li className='thrid-level-li'>Regiones
-                                    <ul className='third-level'>
+                            <a href="#"><li className='thrid-level-li'>Regiones <FontAwesomeIcon icon={faChevronRight} />
+                                    <ul className='third-level left'>
                                         <a href="#"><li>Africa del norte y Asia occidental</li></a>
                                         <a href="#"><li>Africa subsahariana</li></a>
                                         <a href="#"><li>Artico y antartida</li></a>
@@ -70,8 +68,8 @@ function Header() {
                                         <a href="#"><li>Norteamerica</li></a>
                                     </ul>
                             </li></a>
-                            <a href="#"><li className='thrid-level-li'>Temas
-                                    <ul className='third-level'>
+                            <a href="#"><li className='thrid-level-li'>Temas <FontAwesomeIcon icon={faChevronRight} />
+                                    <ul className='third-level left'>
                                         <a href="#"><li>Ciencia y tecnologia</li></a>
                                         <a href="#"><li>Defensa y salud</li></a>
                                         <a href="#"><li>Diplomacia</li></a>
@@ -95,8 +93,8 @@ function Header() {
                         <ul className='sub-list'>
                             <a href="#"><li>Convocatioria</li></a>
                             <a href="#">
-                                <li className='thrid-level-li'>Redes Sociales
-                                    <ul className='third-level'>
+                                <li className='thrid-level-li'>Redes Sociales <FontAwesomeIcon icon={faChevronRight} />
+                                    <ul className='third-level right'>
                                         <a href="#"><li>Instagram</li></a>
                                         <a href="#"><li>Facebook</li></a>
                                         <a href="#"><li>Linkedin</li></a>

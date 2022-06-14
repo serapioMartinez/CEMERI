@@ -1,0 +1,6 @@
+.elemento-lista-parrafo{
+    display: list-item;
+    list-style: disc;
+    white-space: normal;
+    text-align: justify;
+}

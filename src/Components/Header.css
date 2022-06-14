@@ -6,8 +6,8 @@
     color: black;
 }
 .cemeri-header{
-    
     width: 100;
+    overflow: inherit;
 }
 .header-section{
     height: 80px;
@@ -32,6 +32,7 @@ li{
     text-decoration: none;
     margin: 1rem 2rem;
     position: relative;
+    white-space: nowrap;
 }
 .nav-item:hover{
     font-size: 1.2rem;
@@ -59,8 +60,13 @@ li{
     background-color: white;
     position: absolute;
     top: 0;
-    left: 100%;
     display: none;
+}
+.right{
+    right: 100%;
+}
+.left{
+    left: 100%; 
 }
 
 .thrid-level-li:hover > .third-level{
@@ -79,8 +85,10 @@ a:hover{
 #search{
     display: none;
 }
-@media(max-width: 952px){
-
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 @media(max-width: 770px){
     .checkbtn{
@@ -106,10 +114,13 @@ a:hover{
     .bottom{
         width: 100%;
         position: fixed;
-        top: -100%;
+        top: 4rem;
         left: 0;
         height: auto;
         transition: 0.5s;
+    }
+    .hidden{
+        left: -100%;
     }
     .bottom ul{
         width: 100%;
